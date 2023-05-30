@@ -5,42 +5,23 @@ const htmlDateString = (dateObj) => {
   return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
 };
 
-const readableDate = (dateObj, format, zone) => {
-  return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
-    format || "dd LLLL yyyy"
-  );
-};
-
-const head = (array, n) => {
-  if (!Array.isArray(array) || array.length === 0) {
-    return [];
-  }
-  if (n < 0) {
-    return array.slice(n);
-  }
-
-  return array.slice(0, n);
-};
-
-const min = (...numbers) => {
-  return Math.min.apply(null, numbers);
-};
-
 const md = (content = "") => {
   return markdownIt({ html: true }).render(content);
 };
 
-const filterTagList = (tags) => {
-  return (tags || []).filter(
-    (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
-  );
+const zonify = (value) => {
+  let parts = value.split(' ');
+  let response = `<span class="formatted-name-first">${parts[0]}</span><span class="formatted-name-second">${parts[1]}</span>`;
+  if (parts.length == 3) {
+    response += ` ${parts[2]}`;
+  }
+  return `<span class="formatted-name">${response}</span>`;
 };
 
+exports.zonify = zonify;
+
 module.exports = {
-  filterTagList,
-  head,
   htmlDateString,
   md,
-  min,
-  readableDate,
+  zonify,
 };

@@ -1,23 +1,24 @@
 ---
 layout: base.njk
-title: DevZone.one Eleventy Starter
-tags: main
+title: The DiveZone Company
+description: Let's Dive Into The Zone!
+tags: header
 eleventyNavigation:
   key: Home
   order: 0
 eleventyImport:
-  collections: ["posts"]
-numberOfLatestPostsToShow: 3
+  collections: ["brands"]
 ---
 
-{% renderFile "./src/site/_fragments/intro.md" %}
-
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h2>
-  Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}
-</h2>
-
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "components/posts.njk" %}
+<main>
+  {% renderFile "./src/site/_fragments/intro.md" %}
+</main>
+<div class="brands">
+  {%- for brand in collections.brands -%}
+    <div
+      class="brand brand-{{ brand.data.page.fileSlug }}"
+      style="background-image: url('/images/{{ brand.data._image }}')">
+      {{ brand.content | safe }}
+    </div>
+  {%- endfor -%}
+</div>

@@ -1,20 +1,13 @@
-@use "fonts" as *;
+/**
+ * Basic typography style for copy text
+ */
 
 body {
-  font-family: $dosis;
-  font-weight: 300;
-}
-
-h2 {
-  font-weight: 600;
-}
-
-h3,
-strong,
-em {
-  font-weight: 400;
-}
-
-footer {
+  font-family: 'Nunito', sans-serif;
   font-weight: 200;
+}
+
+h2,
+h3 {
+  color: darkblue;
 }
