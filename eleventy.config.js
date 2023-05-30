@@ -20,11 +20,8 @@ module.exports = function (eleventyConfig) {
   });
   // filters
   eleventyConfig.addFilter("htmlDateString", filters.htmlDateString);
-  eleventyConfig.addFilter("readableDate", filters.readableDate);
-  eleventyConfig.addFilter("head", filters.head);
-  eleventyConfig.addFilter("min", filters.min);
   eleventyConfig.addFilter("md", filters.md);
-  eleventyConfig.addFilter("filterTagList", filters.filterTagList);
+  eleventyConfig.addFilter("zonify", filters.zonify);
   // plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyRssPlugin);
@@ -33,6 +30,7 @@ module.exports = function (eleventyConfig) {
   // static
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
   // shortcodes
+  eleventyConfig.addShortcode("logo", shortcodes.logo);
   eleventyConfig.addShortcode("year", shortcodes.year);
   // transform
   eleventyConfig.addTransform("format", function (content) {

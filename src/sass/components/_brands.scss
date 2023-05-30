@@ -1,0 +1,38 @@
+.brands {
+  display: flex;
+  flex-direction: column;
+  .brand {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    padding: 5rem 0;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+    > * {
+      max-width: 400px;
+      background-color: #ffffffcc;
+      border-radius: 16px;
+      padding: 16px;
+      blockquote {
+        text-align: center;
+      }
+    }
+    p {
+      font-weight: 400;
+      em {
+        text-align: center;
+      }
+    }
+  }
+  .brand-devzone-one {
+    > * {
+      background-color: #ffffffee;
+    }
+  }
+}

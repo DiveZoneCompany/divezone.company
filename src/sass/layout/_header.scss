@@ -1,5 +1,31 @@
+:root {
+  --header-outer-height: 140px;
+  --header-inner-height: 100px;
+  --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+}
+
 header {
+  display: flex;
+  align-items: center;
+  // padding: 16px;
+  height: var(--header-outer-height);
+  position: sticky;
+  top: calc(var(--header-height-difference) * -1); /* Multiply by -1 to get a negative value */
+}
+
+.header-inner {
+  height: var(--header-inner-height);
+  position: sticky;
+  top: 0;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsive-wrapper {
   max-width: 1000px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

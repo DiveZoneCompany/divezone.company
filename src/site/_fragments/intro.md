@@ -1,25 +1,12 @@
-## Welcome to this eleventy blog starter template
+## Welcome
 
-This is an example starter template for _[Eleventy](https://11ty.dev)_ as explained in this **[DevZone.one - Get started with Eleventy](https://devzone.one/posts/get-started-with-eleventy)**.
+  DiveZone is combining the best of IT with the most exiting outdoor activity: diving!
 
-The template can be found on GitHub: <https://github.com/DevZoneOne/starter.eleventy>.
+  While the major dive organizations do a good job in training divers and making the
+  underwater world accessable, they are not very good in software development. Most
+  social platforms for divers, if they already exists, are very doubtful, but also
+  limited to one organization.
 
-Included in this starter template:
+  We are gonna break that barrier.
 
-- Eleventy
-  - Navigation plugin
-  - RSS plugin
-  - Render plugin
-  - HTML Base plugin
-- SASS _(Styling kept minimal on purpose)_
-- PostCSS
-  - PostCSS hash
-  - AutoPrefixer
-  - CSS Nano
-- Prettier (on local builds)
-- HTML Minifier (on production builds)
-- Example code
-  - Shortcode (year)
-  - Filters (htmlDate, readableDate, head, min, md)
-
----
+  ### Our brands

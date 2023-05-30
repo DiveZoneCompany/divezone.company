@@ -1,0 +1,58 @@
+.name-logo {
+  font-family: 'Nunito', sans-serif;
+  display: grid;
+  grid-template:
+    'preTitle .'
+    'diveTitle zoneTitle'
+    '. postTitle';
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  &:has(.name-logo) {
+    text-decoration: none;
+  }
+}
+
+.name-logo-pretitle {
+  grid-area: 'preTitle';
+  padding-left: 0.4em;
+  text-align: left;
+}
+
+.name-logo-posttitle {
+  padding: 0 0.2em;
+  grid-area: 'postTitle';
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-logo-pretitle,
+.name-logo-posttitle {
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+.name-logo-dive {
+  grid-area: 'diveTitle';
+  font-weight: 700;
+  color: blue;
+}
+
+.name-logo-zone {
+  grid-area: 'zoneTitle';
+  font-weight: 300;
+  color: darkblue;
+}
+
+.name-logo-dive,
+.name-logo-zone {
+  font-size: 72px;
+  line-height: 58px;
+  height: 59px;
+}

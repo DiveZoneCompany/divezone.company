@@ -1,11 +1,14 @@
 {
-  "title": "DevZone.one Eleventy Starter",
-  "url": "https://starter-eleventy.devzoneone.app",
+  "title": "The DiveZone Company",
+  "url": "https://divezone.company",
   "language": "en",
   "meta": {
-    "author": "DevZone.one",
-    "description": "Starter template for Eleventy",
-    "keywords": ["blog", "devzone", "devzone.one"]
+    "author": "The DiveZone Company",
+    "description": "The DiveZone Company",
+    "keywords": [
+      "DiveZone",
+      "DiveZoneCompany"
+    ]
   },
-  "style.css": "style.66460f1eeb.css"
+  "style.css": "style.118aef3eba.css"
 }
