@@ -1,0 +1,26 @@
+[
+  {
+    "key": "Twitter",
+    "url": "https://twitter.com/_divezone_",
+    "icon": "fab fa-twitter-square",
+    "color": "#00acee"
+  },
+  {
+    "key": "Facebook",
+    "url": "https://www.facebook.com/divez0ne",
+    "icon": "fab fa-facebook-square",
+    "color": "#3b5998"
+  },
+  {
+    "key": "Github",
+    "url": "https://www.github.com/divezone",
+    "icon": "fab fa-github-square",
+    "color": "#171515"
+  },
+  {
+    "key": "Instagram",
+    "url": "https://www.instagram.com/_divezone_",
+    "icon": "fab fa-instagram-square",
+    "color": "#3f729b"
+  }
+]

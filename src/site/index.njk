@@ -6,14 +6,14 @@ eleventyNavigation:
   key: Home
   order: 0
 eleventyImport:
-  collections: ["brands"]
+  collections: ["brandsSorted"]
 ---
 
 <main>
   {% renderFile "./src/site/_fragments/intro.md" %}
 </main>
 <div class="brands">
-  {%- for brand in collections.brands -%}
+  {%- for brand in collections.brandsSorted -%}
     <div
       class="brand brand-{{ brand.data.page.fileSlug }}"
       style="background-image: url('/images/{{ brand.data._image }}')">
