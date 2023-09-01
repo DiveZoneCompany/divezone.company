@@ -1,0 +1,28 @@
+---
+layout: 'page.njk'
+title: Contact
+tags: ['header', 'footer']
+eleventyNavigation:
+  key: Contact
+  order: 99
+---
+{% renderFile "./src/site/_fragments/contact_intro.md" %}
+<form name="contact" method="POST" netlify>
+  <label for="name">Your Name:</label>
+  <input type="text" name="name" placeholder="Your name"/>
+  <label for="email">Your Email:</label>
+  <input type="email" name="email" placeholder="Your email address"/>
+  <label for="message">Message:</label>
+  <textarea name="message" rows="5" placeholder="Your question/remark"></textarea>
+  <div></div>
+  <button type="submit">Submit message</button>
+</form>
+{% renderTemplate "md" %}
+### Post address
+
+The DiveZone Company
+
+Damastroos 2<br>
+2317GA Leiden<br>
+The Netherlands
+{% endrenderTemplate %}
