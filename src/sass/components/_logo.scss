@@ -1,9 +1,10 @@
-.name-logo {
+.name-logo-dive,
+.name-logo-dev {
   font-family: 'Nunito', sans-serif;
   display: grid;
   grid-template:
     'preTitle .'
-    'diveTitle zoneTitle'
+    'titlePart1 titlePart2'
     '. postTitle';
 }
 
@@ -11,7 +12,8 @@ a:link,
 a:hover,
 a:active,
 a:visited {
-  &:has(.name-logo) {
+  &:has(.name-logo-dive),
+  &:has(.name-logo-dev) {
     text-decoration: none;
   }
 }
@@ -35,24 +37,50 @@ a:visited {
   line-height: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  color: darkblue;
 }
 
-.name-logo-dive {
-  grid-area: 'diveTitle';
+.name-logo-titlePart1 {
+  grid-area: 'titlePart1';
   font-weight: 700;
-  color: blue;
 }
 
-.name-logo-zone {
-  grid-area: 'zoneTitle';
+.name-logo-titlePart2 {
+  grid-area: 'titlePart2';
   font-weight: 300;
-  color: darkblue;
 }
 
-.name-logo-dive,
-.name-logo-zone {
+.name-logo-titlePart1,
+.name-logo-titlePart2 {
   font-size: 72px;
   line-height: 58px;
   height: 59px;
+}
+
+.name-logo-dive {
+  .name-logo-pretitle,
+  .name-logo-posttitle {
+    color: darkblue;
+  }
+
+  .name-logo-titlePart1 {
+    color: blue;
+  }
+
+  .name-logo-titlePart2 {
+    color: darkblue;
+  }
+}
+
+.name-logo-dev {
+  .name-logo-pretitle,
+  .name-logo-posttitle {
+    color: darkgreen;
+  }
+  .name-logo-titlePart1 {
+    color: olivedrab;
+  }
+
+  .name-logo-titlePart2 {
+    color: darkgreen;
+  }
 }
