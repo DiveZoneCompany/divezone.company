@@ -5,7 +5,8 @@
   grid-template:
     'preTitle .'
     'titlePart1 titlePart2'
-    '. postTitle';
+    '. postTitle'
+    'slogan slogan';
 }
 
 a:link,
@@ -56,6 +57,16 @@ a:visited {
   height: 59px;
 }
 
+.name-logo-slogan {
+  grid-area: 'slogan';
+  grid-column: 1 / span 2;
+  margin-top: 4px;
+  padding-top: 4px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
 .name-logo-dive {
   .name-logo-pretitle,
   .name-logo-posttitle {
@@ -67,6 +78,11 @@ a:visited {
   }
 
   .name-logo-titlePart2 {
+    color: darkblue;
+  }
+
+  .name-logo-slogan {
+    border-top: 1px solid darkblue;
     color: darkblue;
   }
 }
@@ -81,6 +97,11 @@ a:visited {
   }
 
   .name-logo-titlePart2 {
+    color: darkgreen;
+  }
+
+  .name-logo-slogan {
+    border-top: 1px solid darkgreen;
     color: darkgreen;
   }
 }
