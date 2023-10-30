@@ -9,6 +9,11 @@ const logo = (name) => {
       postTitle += `<span>${name.postTitle.charAt(i)}</span>`;
     }
   }
+  let slogan = '';
+  if (name.slogan) {
+    console.log(name.slogan);
+    slogan = `<div class="name-logo-slogan">${name.slogan}</div>`;
+  }
   return `
 <div class="${rootClass}">
     <div class="name-logo-pretitle">${name.preTitle ?? ''}</div>
@@ -23,6 +28,7 @@ const logo = (name) => {
     <div class="name-logo-posttitle">
         ${postTitle}
     </div>
+    ${slogan}
 </div>
     `;
 };
