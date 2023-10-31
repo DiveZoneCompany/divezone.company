@@ -14,3 +14,16 @@ main {
     padding-right: 2rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  main {
+    h1,
+    h2,
+    h3,
+    p,
+    form {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
