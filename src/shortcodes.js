@@ -11,7 +11,6 @@ const logo = (name) => {
   }
   let slogan = '';
   if (name.slogan) {
-    console.log(name.slogan);
     slogan = `<div class="name-logo-slogan">${name.slogan}</div>`;
   }
   return `
