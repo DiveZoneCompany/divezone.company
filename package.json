@@ -34,7 +34,7 @@
     "postcss": "^8.4.29",
     "postcss-cli": "^10.1.0",
     "postcss-hash": "^3.0.0",
-    "postcss-load-config": "^4.0.1",
+    "postcss-load-config": "^5.0.0",
     "postcss-scss": "^4.0.7",
     "prettier": "^3.0.3",
     "sass": "^1.66.1"
