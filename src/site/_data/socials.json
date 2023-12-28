@@ -12,15 +12,21 @@
     "color": "#3b5998"
   },
   {
-    "key": "Github",
-    "url": "https://www.github.com/divezone",
-    "icon": "fab fa-github-square",
-    "color": "#171515"
-  },
-  {
     "key": "Instagram",
     "url": "https://www.instagram.com/_divezone_",
     "icon": "fab fa-instagram-square",
     "color": "#3f729b"
+  },
+  {
+    "key": "Threads",
+    "url": "https://www.threads.net/_divezone_",
+    "icon": "fab fa-square-threads",
+    "color": "#3f729b"
+  },
+  {
+    "key": "Github",
+    "url": "https://www.github.com/divezone",
+    "icon": "fab fa-github-square",
+    "color": "#171515"
   }
 ]
