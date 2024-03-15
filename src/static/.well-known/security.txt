@@ -1,0 +1,4 @@
+Contact: https://divezone.company/contact/
+Expires: 2024-12-31T23:59:59.000Z
+Preferred-Languages: en, nl, es
+Canonical: https://divezone.company/.well-known/security.txt
