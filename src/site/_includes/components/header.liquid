@@ -1,7 +1,7 @@
 {% assign pages = collections.header | eleventyNavigation %}
 <header>
   <div class="header-inner responsive-wrapper">
-    <a href="/">{% comment %}{% logo preTitle:"THE" postTitle:"COMPANY" %}{% endcomment %}</a>
+    <a href="/">{% include './logo', preTitle:"THE", postTitle:"COMPANY" %}</a>
     <nav class="header-nav">
         <ul role="list" class="nav-list">
             {%- for entry in pages %}

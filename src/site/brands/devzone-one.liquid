@@ -5,9 +5,9 @@ _image: matrix.jpg
 ---
 
 <a href="https://devzone.one/?utm_source=divezone.company&utm_medium=link&utm_campaign=internal" target="blank">
-    {% logo titlePart1 = "DEV",
-    postTitle = " ONE ",
-    slogan = "Development Blog" | safe %}
+    {% include 'components/logo', titlePart1: "DEV",
+    postTitle: "ONE",
+    slogan: "Development Blog." %}
 </a>
 <div>
     {% renderTemplate "md" %}

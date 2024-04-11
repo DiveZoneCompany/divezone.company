@@ -38,7 +38,6 @@ module.exports = function (eleventyConfig) {
   // static
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
   // shortcodes
-  eleventyConfig.addShortcode('logo', shortcodes.logo);
   eleventyConfig.addShortcode('year', shortcodes.year);
   // transform
   eleventyConfig.addTransform('format', function (content) {

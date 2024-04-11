@@ -5,9 +5,7 @@ _image: sunset.jpg
 ---
 
 <a href="https://dive.zone/?utm_source=divezone.company&utm_medium=link&utm_campaign=internal" target="blank">
-    {% logo titlePart1 = "DIVE",
-    titlePart2 = "ZONE",
-    slogan = "By divers 4 divers" | safe %}
+    {% include 'components/logo', slogan: "By divers 4 divers" %}
 </a>
 <div>
     {% renderTemplate "md" %}
