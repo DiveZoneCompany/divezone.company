@@ -1,5 +1,5 @@
 ---
-layout: 'page.njk'
+layout: page
 title: Privacy Policy
 tags: footer
 eleventyNavigation:

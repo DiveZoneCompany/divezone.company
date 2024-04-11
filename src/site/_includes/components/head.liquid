@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/fontawesome/css/thin.min.css"/>
   <link rel="stylesheet" href="/fontawesome/css/brands.min.css"/>
   <!-- tarteaucitron.io -->
-  {% include './tarteaucitron.njk' %}
+  {% include './tarteaucitron.liquid' %}
   <!-- PAGE DATA -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -23,7 +23,7 @@
     {{ manifest.title }}
   </title>
   <meta name="description" content="{{ description or manifest.meta.description }}">
-  <meta name="keywords" content="{{ manifest.meta.keywords.join(', ')}}">
+  <meta name="keywords" content="{{ manifest.meta.keywords | join: ', ' }}">
   <!-- ANALYTICS -->
-  {% include './analytics.njk' %}
+  {% include './analytics.liquid' %}
 </head>

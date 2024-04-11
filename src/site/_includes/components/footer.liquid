@@ -1,4 +1,4 @@
-{% set pages = collections.footer | eleventyNavigation %}
+{% assign pages = collections.footer | eleventyNavigation %}
 <footer>
   <section class="footer-inner">
     <div class="footer-copyright">© {% year %} The DiveZone Company.</div>
@@ -7,7 +7,7 @@
       <ul role="list" class="nav-list">
         {%- for entry in pages %}
           <li{% if entry.url == page.url %} class="active" {% endif %}>
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <a href="{{ entry.url | default: url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>

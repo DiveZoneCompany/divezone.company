@@ -1,5 +1,5 @@
 ---
-layout: 'page.njk'
+layout: page
 title: About
 tags: header
 draft: true

@@ -1,0 +1,26 @@
+{% assign rootClass = 'name-logo-dive' %}
+{% if titlePart1 == 'DEV' %}
+  {% assign rootClass = 'name-logo-dev' %}
+{% endif %}
+<div class="{{ rootClass }}">
+    <div class="name-logo-pretitle">{{ preTitle }}</div>
+    <div></div>
+    <div class="name-logo-titlePart1">
+        {{ titlePart1 | default: 'DIVE' }}
+    </div>
+    <div class="name-logo-titlePart2">
+        {{ titlePart2 | default: 'ZONE' }}
+    </div>
+    <div></div>
+    <div class="name-logo-posttitle">
+      {%- if postTitle %}
+      {%- assign chars = postTitle | split: '' %}
+        {%- for char in chars %}
+          <span>{{ char }}</span>
+        {%- endfor %}
+      {%- endif %}
+    </div>
+    {%- if slogan %}
+    <div class="name-logo-slogan">{{ slogan }}</div>
+    {%- endif %}
+</div>
