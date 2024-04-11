@@ -1,3 +1,12 @@
+---
+layout: home
+description: Let's Dive Into The Zone!
+tags: header
+eleventyNavigation:
+  key: Home
+  order: 0
+---
+
 ## Welcome
 
 DiveZone is combining the best of IT with the most exiting outdoor activity: diving!
