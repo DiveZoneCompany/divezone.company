@@ -22,7 +22,7 @@
     {%- endif %}
     {{ manifest.title }}
   </title>
-  <meta name="description" content="{{ description or manifest.meta.description }}">
+  <meta name="description" content="{{ description | default: manifest.meta.description }}">
   <meta name="keywords" content="{{ manifest.meta.keywords | join: ', ' }}">
   <!-- ANALYTICS -->
   {% include './analytics.liquid' %}
