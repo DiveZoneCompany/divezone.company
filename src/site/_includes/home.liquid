@@ -9,9 +9,7 @@ eleventyImport:
 </main>
 <div class="brands">
   {%- for brand in collections.brandsSorted -%}
-    <div
-      class="brand brand-{{ brand.data.page.fileSlug }}"
-      style="background-image: url('/images/{{ brand.data._image }}')">
+    <div class="brand brand-{{ brand.data.page.fileSlug }}">
       {{ brand.content }}
     </div>
   {%- endfor -%}

@@ -1,58 +1,43 @@
 .brands {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: space-evenly;
   .brand {
-    container-type: inline-size;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    flex-basis: 300px;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 4rem;
-    align-items: center;
-    padding: 5rem 0;
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
-    }
-    > * {
-      max-width: 400px;
-      background-color: #ffffffcc;
-      border-radius: 16px;
-      padding: 16px;
-      blockquote {
-        text-align: center;
-      }
-    }
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    gap: 0.5rem;
     p {
+      padding: 0.1rem 0.5rem;
+      margin: 0;
       font-weight: 400;
       em {
-        text-align: center;
+        font-size: smaller;
       }
     }
-  }
-  .brand-devzone-one {
-    > * {
-      background-color: #ffffffee;
+    a {
+      text-align: center;
+      min-height: 110px;
+      scale: 0.8;
+      > div {
+        margin-left: -30px;
+      }
     }
   }
 }
 
-@media screen and (max-width: 900px) {
-  .brands .brand {
-    flex-direction: column;
-    &:nth-child(odd) {
-      flex-direction: column;
-    }
-  }
+.brand-divezone {
+  background-color: lightcyan;
 }
 
-@media screen and (max-width: 400px) {
-  .brands {
-    .brand {
-      > * {
-        border-radius: 0;
-      }
-    }
-  }
+.brand-devzone, .brand-devzone-one {
+  background-color: lightyellow;
 }
