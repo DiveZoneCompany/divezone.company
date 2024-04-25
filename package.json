@@ -26,7 +26,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.2",
+    "cssnano": "^7.0.0",
     "html-minifier": "^4.0.0",
     "luxon": "^3.4.4",
     "npm-run-all2": "^6.1.2",
