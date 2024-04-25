@@ -1,5 +1,4 @@
-.name-logo-dive,
-.name-logo-dev {
+.name-logo {
   font-family: 'Nunito', sans-serif;
   display: grid;
   grid-template:
@@ -13,8 +12,7 @@ a:link,
 a:hover,
 a:active,
 a:visited {
-  &:has(.name-logo-dive),
-  &:has(.name-logo-dev) {
+  &:has(.name-logo) {
     text-decoration: none;
   }
 }
@@ -67,7 +65,7 @@ a:visited {
   letter-spacing: 0.1rem;
 }
 
-.name-logo-dive {
+.name-logo-blue {
   .name-logo-pretitle,
   .name-logo-posttitle {
     color: darkblue;
@@ -87,7 +85,7 @@ a:visited {
   }
 }
 
-.name-logo-dev {
+.name-logo-green {
   .name-logo-pretitle,
   .name-logo-posttitle {
     color: darkgreen;
@@ -103,5 +101,24 @@ a:visited {
   .name-logo-slogan {
     border-top: 1px solid darkgreen;
     color: darkgreen;
+  }
+}
+
+.name-logo-red {
+  .name-logo-pretitle,
+  .name-logo-posttitle {
+    color: darkred;
+  }
+  .name-logo-titlePart1 {
+    color: orangered;
+  }
+
+  .name-logo-titlePart2 {
+    color: darkred;
+  }
+
+  .name-logo-slogan {
+    border-top: 1px solid darkred;
+    color: darkred;
   }
 }

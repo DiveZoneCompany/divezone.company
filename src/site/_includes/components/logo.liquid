@@ -1,8 +1,4 @@
-{% assign rootClass = 'name-logo-dive' %}
-{% if titlePart1 == 'DEV' %}
-  {% assign rootClass = 'name-logo-dev' %}
-{% endif %}
-<div class="{{ rootClass }}">
+<div class="name-logo name-logo-{{ rootColor | default: 'blue' }}">
     <div class="name-logo-pretitle">{{ preTitle }}</div>
     <div></div>
     <div class="name-logo-titlePart1">
