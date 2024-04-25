@@ -18,4 +18,4 @@ limited to one organization.
 
 We are gonna break that barrier.
 
-### Our brands
+### Our brands / products
