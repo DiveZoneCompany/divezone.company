@@ -12,6 +12,13 @@ footer {
   a {
     color: white;
     font-size: var(--fs-500);
+    text-decoration: none;
+  }
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    text-decoration: none;
   }
 }
 
@@ -21,14 +28,5 @@ footer {
     a {
       color: white;
     }
-  }
-}
-
-.footer-socials {
-  a:link,
-  a:hover,
-  a:active,
-  a:visited {
-    text-decoration: none;
   }
 }
