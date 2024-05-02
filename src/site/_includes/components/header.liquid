@@ -1,15 +1,20 @@
 {% assign pages = collections.header | eleventyNavigation %}
 <header>
-  <div class="header-inner responsive-wrapper">
-    <a href="/">{% include './logo', preTitle:"THE", postTitle:"COMPANY" %}</a>
-    <nav class="header-nav">
-        <ul role="list" class="nav-list">
-            {%- for entry in pages %}
-                <li {% if entry.url == page.url %} class="active" {% endif %}>
-                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-                </li>
-            {%- endfor %}
-        </ul>
+  <div class='header--logo'>
+    <a href='/'>{% include './logo', preTitle: 'THE', postTitle: 'COMPANY' %}</a>
+  </div>
+  <div class='header--nav'>
+    <nav class='nav--main'>
+      <ul role='list'>
+        {%- for entry in pages %}
+          <li
+            {% if entry.url == page.url %}
+              class='active'
+            {% endif %}>
+            <a href='{{ entry.url | url }}'>{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
     </nav>
   </div>
 </header>

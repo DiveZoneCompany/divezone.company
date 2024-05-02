@@ -1,12 +1,12 @@
 .formatted-name {
-  font-family: "Nunito", sans-serif;
-  color: darkblue;
+  font-family: var(--font-nunito);
+  color: var(--theme-blue-primary);
   font-weight: 100;
 }
 
 .formatted-name-first {
   font-weight: 700;
-  color: blue;
+  color: var(--theme-blue-secondary);
 }
 
 .formatted-name-second {

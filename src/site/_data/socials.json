@@ -1,5 +1,10 @@
 [
   {
+    "key": "LinkedIn",
+    "url": "https://linkedin.com/company/divezone-company",
+    "icon": "fab fa-linkedin"
+  },
+  {
     "key": "Twitter",
     "url": "https://twitter.com/_divezone_",
     "icon": "fab fa-twitter-square"

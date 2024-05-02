@@ -1,22 +1,22 @@
-<div class="name-logo name-logo-{{ rootColor | default: 'blue' }}">
-    <div class="name-logo-pretitle">{{ preTitle }}</div>
-    <div></div>
-    <div class="name-logo-titlePart1">
-        {{ titlePart1 | default: 'DIVE' }}
-    </div>
-    <div class="name-logo-titlePart2">
-        {{ titlePart2 | default: 'ZONE' }}
-    </div>
-    <div></div>
-    <div class="name-logo-posttitle">
-      {%- if postTitle %}
+<div class='logo logo--{{ rootColor | default: 'blue' }}'>
+  <div class='logo--pretitle'>{{ preTitle }}</div>
+  <div></div>
+  <div class='logo--titlePart1'>
+    {{ titlePart1 | default: 'DIVE' }}
+  </div>
+  <div class='logo--titlePart2'>
+    {{ titlePart2 | default: 'ZONE' }}
+  </div>
+  <div></div>
+  <div class='logo--posttitle'>
+    {%- if postTitle %}
       {%- assign chars = postTitle | split: '' %}
-        {%- for char in chars %}
-          <span>{{ char }}</span>
-        {%- endfor %}
-      {%- endif %}
-    </div>
-    {%- if slogan %}
-    <div class="name-logo-slogan">{{ slogan }}</div>
+      {%- for char in chars %}
+        <span>{{ char }}</span>
+      {%- endfor %}
     {%- endif %}
+  </div>
+  {%- if slogan %}
+    <div class='logo--slogan'>{{ slogan }}</div>
+  {%- endif %}
 </div>

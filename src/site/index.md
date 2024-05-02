@@ -2,9 +2,6 @@
 layout: home
 description: Let's Dive Into The Zone!
 tags: header
-eleventyNavigation:
-  key: Home
-  order: 0
 ---
 
 ## Welcome

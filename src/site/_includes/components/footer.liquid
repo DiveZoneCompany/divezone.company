@@ -1,24 +1,37 @@
 {% assign pages = collections.footer | eleventyNavigation %}
 <footer>
-  <section class="footer-inner">
-    <div class="footer-copyright">© {% year %} The DiveZone Company.</div>
+  <div class='footer--copyright'>
+    © {% year %} The DiveZone Company.
+    <div class='footer--trademarks'>
+      DevZone, DevZone Solutions and DevZone One are registered trademarks of The DiveZone Company
+    </div>
+  </div>
 
-    <nav class="footer-nav">
-      <ul role="list" class="nav-list">
+  <div class='footer--nav'>
+    <nav class='nav--main'>
+      <ul role='list'>
         {%- for entry in pages %}
-          <li{% if entry.url == page.url %} class="active" {% endif %}>
-            <a href="{{ entry.url | default: url }}">{{ entry.title }}</a>
+          <li
+            {% if entry.url == page.url %}
+              class='active'
+            {% endif %}>
+            <a href='{{ entry.url | default: url }}'>{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
     </nav>
+  </div>
 
-    <div class="footer-socials">
-      {% for social in socials %}
-        <a id="social-{{ social.key | slugify }}" class="{{ social.icon }}" href="{{ social.url }}" target="_blank">
-          <span class="sr-only">{{ social.key }}</span>
-        </a>
-      {% endfor %}
-    </div>
-  </section>
+  <div class='footer--socials'>
+    {% for social in socials %}
+      <a id='social-{{ social.key | slugify }}' class='{{ social.icon }}' href='{{ social.url }}' target='_blank'>
+        <span class='sr-only'>{{ social.key }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class='footer--fathom'>
+    Proudly respecting your privacy with
+    <a href='https://usefathom.com/ref/DTPELY' target='_blank'>Fathom Analytics</a>!
+  </div>
 </footer>

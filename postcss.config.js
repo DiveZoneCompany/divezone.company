@@ -5,6 +5,7 @@ module.exports = {
     require('postcss-hash')({
       manifest: './src/site/_data/manifest.json',
     }),
+    require('postcss-merge-rules'),
     require('autoprefixer'),
     require('cssnano'),
   ],
