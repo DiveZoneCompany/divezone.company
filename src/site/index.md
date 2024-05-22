@@ -4,7 +4,7 @@ description: Let's Dive Into The Zone!
 tags: header
 ---
 
-## Welcome
+# Welcome
 
 DiveZone is combining the best of IT with the most exiting outdoor activity: diving!
 
