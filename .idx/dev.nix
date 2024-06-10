@@ -39,6 +39,7 @@
     workspace = {
       onCreate = {
         npm-install = "npm install";
+        git-config-email ="git config --global user.email \"wjboogerd@users.noreply.github.com\"";
       };
       onStart = {
         npm-start = "npm start";
