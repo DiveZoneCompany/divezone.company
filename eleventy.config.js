@@ -1,5 +1,4 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const { EleventyRenderPlugin, EleventyHtmlBasePlugin } = require('@11ty/eleventy');
 const transforms = require('./src/transforms');
 const shortcodes = require('./src/shortcodes');
@@ -32,7 +31,6 @@ module.exports = function (eleventyConfig) {
   });
   // plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(eleventyRssPlugin);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // static
