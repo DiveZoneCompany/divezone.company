@@ -1,12 +1,13 @@
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const { EleventyRenderPlugin, EleventyHtmlBasePlugin } = require('@11ty/eleventy');
-const transforms = require('./src/transforms');
-const shortcodes = require('./src/shortcodes');
-const filters = require('./src/filters');
-const helpers = require('./src/helpers');
-const collections = require('./src/collections');
+import { EleventyHtmlBasePlugin, EleventyRenderPlugin } from "@11ty/eleventy";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 
-module.exports = function (eleventyConfig) {
+import collections from "./src/collections.js";
+import filters from "./src/filters.js";
+import helpers from "./src/helpers.js";
+import shortcodes from "./src/shortcodes.js";
+import transforms from "./src/transforms.js";
+
+export default async function (eleventyConfig) {
   let prodMode;
   // config
   eleventyConfig.setFrontMatterParsingOptions({

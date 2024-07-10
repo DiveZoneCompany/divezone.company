@@ -4,6 +4,6 @@ const brandsSorted = (collectionApi) => {
   });
 };
 
-module.exports = {
+export default {
   brandsSorted,
 };

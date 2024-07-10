@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   tags: 'brands',
   permalink: false,
 };

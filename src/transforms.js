@@ -1,18 +1,37 @@
-const htmlmin = require("html-minifier");
-const prettier = require("prettier");
-const path = require("path");
+import { minify as minifyHTML } from "html-minifier-terser";
+import { minify as minifyXML } from "minify-xml";
+import path from "path";
+import prettier from "prettier";
 
 const minify = (content, outputPath) => {
-  if (outputPath && outputPath.endsWith(".html")) {
-    let minified = htmlmin.minify(content, {
-      useShortDoctype: true,
-      removeComments: true,
-      collapseWhitespace: true,
-    });
-    return minified;
-  }
-
-  return content;
+  if (outputPath) {
+    const extname = path.extname(outputPath);
+    if (extname) {
+      switch (extname) {
+        case ".html":
+          return minifyHTML(content, {
+            useShortDoctype: true,
+            removeComments: true,
+            collapseWhitespace: true,
+          });
+        case ".json":
+          // Not found a proper minifier yet, so formatting it instead.
+          // Strip leading period from extension and use as the Prettier parser.
+          const parser = extname.replace(/^./, "");
+          return prettier.format(content, {
+            parser,
+            printWidth: 160,
+            singleAttributePerLine: false,
+            bracketSameLine: true,
+          });
+        case ".xml": 
+          return minifyXML(content, {});
+        default:
+          return content;
+        }
+      }
+    }
+    return content;
 };
 
 const prettify = (content, outputPath) => {
@@ -39,7 +58,7 @@ const prettify = (content, outputPath) => {
   return content;
 };
 
-module.exports = {
+export default {
   minify,
   prettify,
 };

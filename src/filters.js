@@ -1,5 +1,5 @@
-const { DateTime } = require("luxon");
-const markdownIt = require("markdown-it");
+import { DateTime } from "luxon";
+import markdownIt from "markdown-it";
 
 const htmlDateString = (dateObj) => {
   return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
@@ -18,9 +18,7 @@ const zonify = (value) => {
   return `<span class="formatted-name">${response}</span>`;
 };
 
-exports.zonify = zonify;
-
-module.exports = {
+export default {
   htmlDateString,
   md,
   zonify,

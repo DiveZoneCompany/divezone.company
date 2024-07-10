@@ -1,12 +1,15 @@
-const path = require('path');
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import postcssHash from 'postcss-hash';
+import postcssMergeRules from 'postcss-merge-rules';
 
-module.exports = {
+export default {
   plugins: [
-    require('postcss-hash')({
+    postcssHash({
       manifest: './src/site/_data/manifest.json',
     }),
-    require('postcss-merge-rules'),
-    require('autoprefixer'),
-    require('cssnano'),
+    postcssMergeRules,
+    autoprefixer,
+    cssnano,
   ],
 };
