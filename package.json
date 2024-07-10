@@ -24,7 +24,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
-    "@divezone/divezone-web-styles": "^0.4.0",
+    "@divezone/divezone-web-styles": "^0.5.0",
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.1",
     "html-minifier": "^4.0.0",
