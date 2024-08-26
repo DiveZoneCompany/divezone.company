@@ -1,6 +1,9 @@
 # dependencies installed by npm
 node_modules
 
+# generated source files
+style.json
+
 # build artefacts
 public
 

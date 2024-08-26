@@ -6,7 +6,7 @@ import postcssMergeRules from 'postcss-merge-rules';
 export default {
   plugins: [
     postcssHash({
-      manifest: './src/site/_data/manifest.json',
+      manifest: './src/site/_data/style.json',
     }),
     postcssMergeRules,
     autoprefixer,
