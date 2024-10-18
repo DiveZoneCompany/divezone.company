@@ -1,5 +1,10 @@
 @use 'pkg:@divezone/divezone-web-styles' as dz;
+@use "sass:map";
 
 @use 'components';
 
 @use 'partials/formatted-name.scss';
+
+@media (prefers-color-scheme: dark) {
+  @include dz.theme(map.get(dz.$themes, darkblue));
+}
