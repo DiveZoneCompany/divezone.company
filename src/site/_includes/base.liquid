@@ -11,7 +11,7 @@ metadata:
       {% include 'components/nav.liquid' %}
       <main class="main--{{ layout }} main--{{ page.fileSlug }}">
         {%- if draft %}
-          <div class="draft">DRAFT</div>
+          <div class="alert warning">DRAFT</div>
         {%- endif %}
         {{ content }}
       </main>
