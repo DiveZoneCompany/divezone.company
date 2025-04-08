@@ -36,6 +36,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // static
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
+  eleventyConfig.addPassthroughCopy({ 'node_modules/@divezone/divezone-web-styles/static': '/' });
   // shortcodes
   eleventyConfig.addShortcode('year', shortcodes.year);
   // transform

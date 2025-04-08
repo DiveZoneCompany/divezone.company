@@ -27,10 +27,10 @@
   "homepage": "https://divezone.company/",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-navigation": "^1.0.1",
-    "@divezone/divezone-web-styles": "^1.1.10",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "@divezone/divezone-web-styles": "^1.2.0",
     "html-minifier-terser": "^7.2.0",
-    "luxon": "^3.6.0",
+    "luxon": "^3.6.1",
     "minify-xml": "^4.5.2",
     "path": "^0.12.7",
     "prettier": "^3.5.3"
