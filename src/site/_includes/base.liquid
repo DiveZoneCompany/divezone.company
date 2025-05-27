@@ -9,10 +9,8 @@ metadata:
     <div class="page-layout">
       {% include 'components/header.liquid' %}
       {% include 'components/nav.liquid' %}
-      <main class="main--{{ layout }} main--{{ page.fileSlug }}">
-        {%- if draft %}
-          <div class="alert warning">DRAFT</div>
-        {%- endif %}
+      <main {% if draft %}draft{% endif %}
+        class="main--{{ layout }} main--{{ page.fileSlug }}">
         {{ content }}
       </main>
       {% include 'components/footer.liquid' %}

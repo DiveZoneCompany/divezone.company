@@ -7,7 +7,7 @@ eleventyImport:
 {{ content }}
 <div class="brands">
   {%- for brand in collections.brandsSorted -%}
-    <div class="brand brand-{{ brand.data.page.fileSlug }}">
+    <div {% if brand.data.draft %}draft{% endif %} class="brand brand-{{ brand.data.page.fileSlug }}">
       {{ brand.content }}
     </div>
   {%- endfor -%}
