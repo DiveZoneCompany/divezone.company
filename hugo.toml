@@ -1,0 +1,23 @@
+baseURL = 'https://divezone.company/'
+languageCode = 'en-us'
+title = 'The DiveZone Company'
+theme = 'divezone'
+enableGitInfo = true
+enableRobotsTXT = true
+disableKinds = ["rss"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+  writeStats = true
+
+[module]
+  [[module.mounts]]
+    source = 'node_modules/@divezone/divezone-web-styles/static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'

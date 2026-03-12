@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="brands">
+{{ with .Site.GetPage "/brands" }}
+  {{ range .Pages }}
+    <div {{ if .Draft }}draft{{ end }} class="brand brand-{{ .File.ContentBaseName }}">
+      <a href="{{ .Params.link }}">{{ partial "logo.html" .Params.logo }}</a>
+      <div>
+      {{ .Content }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
+</div>
+
+{{/* <div class="brands">
+  {{ range sort (where site.RegularPages "Section" "brands") "Title" "asc" }}
+    <div {{ if .Draft }}draft{{ end }} class="brand brand-{{ brand.data.page.fileSlug }}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+</div> */}}
+
+{{ end }}

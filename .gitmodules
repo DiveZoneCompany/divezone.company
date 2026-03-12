@@ -1,0 +1,3 @@
+[submodule "themes/divezone"]
+	path = themes/divezone
+	url = https://github.com/DiveZoneCompany/divezone-theme.git
