@@ -1,7 +1,7 @@
 # generated files
 style.json
 assets/css/*
-resources/_gen
+resources
 
 # dependencies installed by npm
 node_modules

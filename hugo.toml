@@ -4,7 +4,7 @@ title = 'The DiveZone Company'
 theme = 'divezone'
 enableGitInfo = true
 enableRobotsTXT = true
-disableKinds = ["rss"]
+disableKinds = ["rss","taxonomy","term"]
 
 [markup]
   [markup.goldmark]
