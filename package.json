@@ -8,7 +8,7 @@
   },
   "scripts": {
     "watch:sass": "sass --no-source-map --pkg-importer=node --watch sass:assets/css",
-    "watch:hugo": "hugo server -D --navigateToChanged",
+    "watch:hugo": "hugo server -D --disableFastRender --navigateToChanged",
     "build:sass": "sass --no-source-map --pkg-importer=node sass:assets/css",
     "build:hugo": "hugo --minify",
     "start": "npm-run-all build:sass --parallel watch:*",

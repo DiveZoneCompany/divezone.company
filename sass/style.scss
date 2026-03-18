@@ -5,6 +5,10 @@
 
 @use 'partials/formatted-name.scss';
 
+:root {
+  --transition-speed: 0.3s;
+}
+
 @media (prefers-color-scheme: dark) {
   @include dz.theme(map.get(dz.$themes, darkblue));
 }
