@@ -1,4 +1,4 @@
-@use 'pkg:@divezone/divezone-web-styles' as dz;
+@use '../themes/divezone/sass/index.scss' as dz;
 @use "sass:map";
 
 @use 'components';

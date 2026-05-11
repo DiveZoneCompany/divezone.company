@@ -5,8 +5,13 @@
 <div class="brands">
 {{ with .Site.GetPage "/brands" }}
   {{ range .Pages }}
-      <a {{ if .Draft }}draft{{ end }} class="brand brand-{{ .File.ContentBaseName }}" href="{{ .Params.link }}">{{ partial "logo.html" .Params.logo }}
-      <div>
+      <a {{ if .Draft }}draft{{ end }} class="brand brand-{{ .File.ContentBaseName }}" href="{{ .Params.link }}">
+        {{ if .Params.logo.color }}
+        {{ partial "logo.html" .Params.logo }}
+        {{ else }}
+        {{ partial .Params.logo.file  }}
+        {{ end }}
+      <div class="brand--content">
       {{ .Content }}
       </div>
     </a>

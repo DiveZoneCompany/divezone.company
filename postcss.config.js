@@ -6,6 +6,6 @@ export default {
   plugins: [
     postcssMergeRules,
     autoprefixer,
-    cssnano,
+    process.env.HUGO_ENVIRONMENT !== 'development' ? cssnano : null,
   ],
 };

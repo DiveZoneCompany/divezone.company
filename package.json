@@ -7,9 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "watch:sass": "sass --no-source-map --pkg-importer=node --watch sass:assets/css",
+    "watch:sass": "sass --watch sass:assets/css",
     "watch:hugo": "hugo server -D --disableFastRender --navigateToChanged",
-    "build:sass": "sass --no-source-map --pkg-importer=node sass:assets/css",
+    "build:sass": "sass --no-source-map sass:assets/css",
     "build:hugo": "hugo --minify",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:hugo"
@@ -24,6 +24,15 @@
   },
   "homepage": "https://divezone.company/",
   "devDependencies": {
-    "@divezone/divezone-web-styles": "^1.3.5"
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^8.0.0",
+    "npm-run-all2": "^8.0.4",
+    "postcss": "^8.5.14",
+    "postcss-cli": "^11.0.1",
+    "postcss-hash": "^3.0.0",
+    "postcss-load-config": "^6.0.1",
+    "postcss-merge-rules": "^8.0.0",
+    "postcss-scss": "^4.0.9",
+    "sass": "^1.99.0"
   }
 }
