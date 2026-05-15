@@ -3,7 +3,7 @@ title: DiveZone
 order: 0
 link: https://dive.zone/?utm_source=divezone.company&utm_medium=link&utm_campaign=internal
 logo:
-  file: logos/divezone.html
+  file: logo/divezone.html
 ---
 
 ### By divers 4 divers

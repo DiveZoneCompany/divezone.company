@@ -3,7 +3,7 @@ title: DevZone Solutions
 order: 10
 link: https://devzone.solutions/?utm_source=divezone.company&utm_medium=link&utm_campaign=internal
 logo:
-  file: logos/devzone-solutions.html
+  file: logo/devzone-solutions.html
 ---
 
 ### No nonsense development

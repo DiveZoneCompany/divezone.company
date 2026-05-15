@@ -4,7 +4,7 @@ draft: true
 order: 11
 link: https://devzone.one/?utm_source=divezone.company&utm_medium=link&utm_campaign=internal
 logo:
-  file: logos/devzone-one.html
+  file: logo/devzone-one.html
 ---
 
 ### Development Blog
