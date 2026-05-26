@@ -1,27 +1,22 @@
 [
   {
     "key": "LinkedIn",
-    "url": "https://linkedin.com/company/divezone-company",
-    "icon": "fab fa-linkedin"
+    "url": "https://linkedin.com/company/divezone-company"
   },
   {
     "key": "Facebook",
-    "url": "https://www.facebook.com/divez0ne",
-    "icon": "fab fa-facebook-square"
+    "url": "https://www.facebook.com/divez0ne"
   },
   {
     "key": "Instagram",
-    "url": "https://www.instagram.com/_divezone_",
-    "icon": "fab fa-instagram-square"
+    "url": "https://www.instagram.com/_divezone_"
   },
   {
     "key": "Threads",
-    "url": "https://www.threads.net/_divezone_",
-    "icon": "fab fa-square-threads"
+    "url": "https://www.threads.net/_divezone_"
   },
   {
     "key": "Github",
-    "url": "https://www.github.com/divezone",
-    "icon": "fab fa-github-square"
+    "url": "https://www.github.com/divezone"
   }
 ]
