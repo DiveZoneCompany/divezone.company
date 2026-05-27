@@ -9,6 +9,6 @@ logo:
 ### No nonsense development
 
 High tech consultancy in IT development specialized in Java backend services, 
-Angular Front-end applications and Flutter based mobile apps.
+Angular Front-end applications and Flutter or KMP based mobile apps.
 
 *And yes, the name is nerdy wordplay of our DiveZone brand!*
