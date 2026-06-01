@@ -7,7 +7,14 @@ jobs:
     if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout including submodules
+        uses: actions/checkout@v6
         with:
           submodules: true
-      - run: npm ci && npm run build
+      - name: Setup HUGO
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build
+        run: npm ci && npm run build
