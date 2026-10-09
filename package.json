@@ -24,15 +24,15 @@
   },
   "homepage": "https://divezone.company/",
   "devDependencies": {
-    "autoprefixer": "^10.5.0",
-    "cssnano": "^8.0.1",
-    "npm-run-all2": "^9.0.1",
-    "postcss": "^8.5.15",
-    "postcss-cli": "^11.0.1",
+    "autoprefixer": "^10.6.1",
+    "cssnano": "^9.4.0",
+    "npm-run-all2": "^9.0.3",
+    "postcss": "^8.5.29",
+    "postcss-cli": "^12.0.0",
     "postcss-hash": "^3.0.0",
     "postcss-load-config": "^6.0.1",
-    "postcss-merge-rules": "^8.0.0",
+    "postcss-merge-rules": "^9.1.3",
     "postcss-scss": "^4.0.9",
-    "sass": "^1.100.0"
+    "sass": "^1.105.1"
   }
 }
